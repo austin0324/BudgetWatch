@@ -1,26 +1,24 @@
-import logo from '../logo.svg';
-import '../App.css';
+import "../App.css";
 
 function Login() {
   return (
-    <div className="Login">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/page/Login.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className='text-3xl font-bold underline'>
-          Learn React
-          </div>
-          
+    <div className="flex flex-col items-center mt-16">
+      <div className="login-icon-container">
+        <img className="login-icon" src="" alt="" />
+      </div>
+      <h1 className="login-heading">user login</h1>
+      <div className="login-input">
+        <input className="username" type="text" placeholder="username" />
+        <input className="password" type="text" placeholder="password" />
+      </div>
+      <div className="login-options ">
+        <input type="checkbox" id="remeber-me" />
+        <label htmlFor="remember-me">remember me</label>
+        <a href="#" className="forgot-password">
+          forgot password?
         </a>
-      </header>
+      </div>
+      <button className="login-button">login</button>
     </div>
   );
 }
